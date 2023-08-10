@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: 'EB Garamond', serif;
+    background-color: #D8C7A1;
+    color: whitesmoke;
+    text-shadow: -1px -2px 1px #2e2621;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 22px;
+    text-shadow: 1px 1px 5px black;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: #53453C;
+    margin-left: -10px;
+    margin-right: -10px;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, .75fr));
+    grid-template-rows: repeat(auto-fill, minmax(500px, 1fr));
+    padding: 20px;
+}
+
+.book {
+    position: relative;
+    margin: 0;
+    height: 500px;
+}
+
+.card {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #53453C;
+    height: 400px;
+    width: 300px;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgb(240, 236, 236);
+    border-color: #a77459;
+    border-style: dotted;
+}
+
+.card:hover {
+    position: relative;
+    bottom: 1px;
+    right: 1px;
+    background-color: #3f342d;
+}
+
+
+
+.back-cover {
+    position: relative;
+    top:-415px;
+    left: 5px;
+    z-index: -1;
+    height: 427px;
+    width: 331px;
+    border-radius: 10px;
+    background-color: #53453C;
+    border-style: dotted;
+    border-color: #a77459;
+    box-shadow: 2px 2px 5px gray;
+    margin-bottom: 0;
+}
+
+.card:hover ~ .back-cover {
+    background-color: #3f342d;
+    box-shadow: 8px 8px 10px #3d342d;
+}
+
+.straps {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 21.6rem;
+    position: relative;
+    left: 10px;
+
+}
+
+.strap {
+    height: 30px;
+    background-color: #614B36;
+    border-style: dashed;
+    border-left: none;
+    border-right: none;
+    border-color: #A0775B;
+    box-shadow: 0px 2px 5px #251f1b;
+}
+
+.page {
+    margin-top: auto;
+}
+
+.read-status {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.by {
+    font-size: 1rem;
+}
+
+.author {
+    font-size: clamp(2.5rem, 80% , 3rem);
+    white-space: nowrap;
+}
+
+button {
+    font-family: 'EB Garamond';
+    font-weight: bold;
+    color: white;
+    font-size: 1.3rem;
+    margin-right: auto;
+    padding: 20px;
+    height: 75px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #A0775B;
+    text-shadow: -1px -2px 1px #2e2621;
+    box-shadow: 1px 1px 3px black;
+    border-style: none;
+}
+
+button:hover {
+    background-color: #70533f;
+}
+
+input {
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    background-color: #3f342d;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    width: 50vw;
+    height: 25vh;
+    position: relative;
+    top: clamp(-900px,80%,-300px)
+}
+
+.inputs {
+    display: flex;
+}
+
+.input {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub {
+    align-self: center;
+    justify-self: center;
+    margin-left: auto;
+}
+
+.legend {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-left:0%;
+}
+
+.rmv-btn,
+.change {
+    width: 60px;
+    height: 25px;
+    padding: 5px;
+    font-size: .8rem;
+    border-style: none;
+    background-color: #70533f;
+    box-shadow: -1px -2px 1px #2e2621;
+
+}
+
+.rmv-btn:hover,
+.change:hover {
+    background-color: #3d342d;
+}

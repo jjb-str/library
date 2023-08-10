@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <h1 class="page-title">Your Library</h1>
+        <button onclick="window.scrollTo(0, document.body.scrollHeight)">Add a Book</button>
+    </div>
+
+    <div class="container">
+        
+    </div>
+
+    <form class="form" action="#" method="post">
+        <legend class="legend">Book Information</legend>
+        <div class="inputs">
+            <div class="input">
+                <label for="new-title">Title</label>
+                <label for="new-author">Author</label>
+                <label for="new-page">Total Pages</label>
+                <label for="read-status">Have Read</label>
+            </div>
+            <div class="input">
+                <input maxlength="20" type="text" name="new-title" class="new-title" placeholder="Title" required>
+                <input maxlength="20" type="text" name="new-author" class="new-author" placeholder="Author" required>
+                <input type="number" min="1" max="99999" name="new-page" class="new-page" required>
+                <input type="checkbox" name="read-status" id="read-status">
+            </div>
+        </div>
+        <button class="sub" type="submit">Add</button>
+</form>
+</body>
+</html>
